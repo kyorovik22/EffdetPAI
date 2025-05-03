@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+ENV/
+env/
+
+# Flask cache
+instance/
+*.pyc
+
+# Uploaded files
+uploads/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# VSCode or IDE
+.vscode/
+.idea/
+
+# Python test or coverage
+.coverage
+coverage.xml
+*.cover
+*.log
+
+# Jupyter and IPython
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
+
+# PyInstaller
+*.spec
+dist/
+build/

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='images/fevicon.png') }}"
+      type="image/gif"
+    />
+
+    <title>Hostit</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/bootstrap.css') }}"
+    />
+
+    <!-- Fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/font-awesome.min.css') }}"
+    />
+
+    <!-- Custom styles -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/responsive.css') }}"
+    />
+  </head>
+  <style>
+    .service_section {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .heading_container h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .img-container img {
+      width: 70%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-container {
+      width: 80%;
+      max-width: 800px;
+      margin: auto;
+      text-align: justify;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .detail-box {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .detail-box a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .detail-box a:hover {
+      background: #0056b3;
+    }
+  </style>
+
+  <body class="sub_page">
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="{{ url_for('home') }}">
+              <span>Mon's</span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('home') }}">
+                    Home <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('detection') }}"
+                    >Detection</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <section class="service_section">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>PERIAPICAL INDEX (PAI)</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="img-container">
+          <img
+            src="{{ url_for('static', filename='images/PAI.jpg') }}"
+            alt=""
+          />
+        </div>
+        <div class="text-container">
+          <p>
+            Periapical Index (PAI) adalah sistem penilaian radiografi yang
+            digunakan untuk mengevaluasi kondisi periapikal gigi. Metode ini
+            sering digunakan dalam penelitian endodontik untuk menentukan
+            tingkat keberhasilan atau kegagalan perawatan saluran akar. Skala
+            PAI berkisar dari 1 hingga 5, dengan nilai yang lebih tinggi
+            menunjukkan kondisi patologis yang lebih parah.
+          </p>
+          <p>
+            Sistem ini dikembangkan untuk memberikan standar penilaian yang
+            lebih objektif dalam diagnosis lesi periapikal serta dalam
+            mengevaluasi efektivitas perawatan endodontik dari waktu ke waktu.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_section">
+      <div class="container">
+        <p>&copy; <span id="displayYear"></span> All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+  </body>
+</html>
