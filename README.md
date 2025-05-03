@@ -28,23 +28,18 @@ A web-based application for detecting medical conditions or anomalies in X-ray i
 
 ## 📁 Directory Structure
 
-├── app.py 
-├── models/
-│ └── best.pt 
-├── uploads/ 
-├── templates/ 
-│ ├── index.html
-│ ├── detection.html
-│ ├── result.html
-│ └── about.html
-├── static/ 
-├── requirements.txt 
-└── .gitignore 
+EffdetPAI/
+├── app.py
+├── requirements.txt
+├── uploads/               
+├── templates/             
+├── static/                
+├── models/                
+├── utils/                 
+└── README.md
 
 
 ---
-
-## 🛠️ Installation Guide
 
 ## 🛠️ Installation Guide
 
